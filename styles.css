@@ -1,0 +1,336 @@
+/*
+  blue: #063852
+  yellow: #e6df44
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto Mono', monospace;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+#content{
+
+}
+
+#title, .sec-title{
+  font-family: 'Kosugi', sans-serif;
+}
+
+.sec-title{
+  margin-bottom: 0px;
+  font-size: 2em;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  transform: rotate(-0.8deg);
+  width: 30vw;
+  position: relative;
+  z-index: 5;
+}
+
+section{
+  padding-top: 5vh;
+}
+
+/* sticky */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+/**** HEADER *****/
+header{
+  width: 100%;
+  height: 85vh;
+  padding-left: 5%;
+  background-color: #000;
+  color: #fff;
+}
+
+header h1{
+  width: 75%;
+  font-size: 10em;
+  margin: 0 0 30px 0;
+  padding-top: 30px;
+}
+
+header h2{
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+nav{
+  height: 5vh;
+  z-index: 10;
+}
+
+/**** NAV *****/
+#mobile-nav{
+  display: none;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10% 10px 5%;
+  list-style: none;
+  background-color: #fff;
+}
+a, a:visited{
+  font-size: 1.2em;
+  color: #0000ee;
+}
+
+a:hover{
+  color: #063852;
+}
+
+
+/***** SLICK CAROUSEL *****/
+.multiple-items{
+  display: flex;
+  width: 100%;
+}
+.multiple-items article.zine{
+  height: 35vw;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cometbus{
+  background-image: url('cometbus.jpg');
+}
+.loves-prayers{
+  background-image: url('loves-prayers.jpg');
+}
+.about-zines{
+  background-image: url('about-zines.jpg');
+}
+.peace-coast{
+  background-image: url('peace-coast.jpg');
+}
+.hard-soft{
+  background-image: url('hard-soft.jpg');
+}
+
+.multiple-items article.zine figure{
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  transform: translateY(-10px);
+}
+.multiple-items article.zine figure figcaption{
+  position: relative;
+  left: 0;
+  padding: 10px;
+  background-color: #000;
+  font-size: 2em;
+  color: #fff;
+  max-width: 23vw;
+}
+.multiple-items button{
+  visibility: hidden;
+  padding: 0;
+}
+
+.multiple-items .slick-prev:after {
+  content:'<';
+}
+
+.multiple-items .slick-next:after {
+  content:'>';
+}
+
+
+.multiple-items button:after{
+  visibility: visible;
+  display: block;
+  width: 25px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 20px;
+}
+
+.slick-list{
+  width: 100%;
+}
+
+
+/***** SECTIONS *****/
+section{
+  padding: 30px 10% 10px 5%;
+}
+
+p{
+  font-size: 1.3em;
+  border: 1px solid rgba(0,0,0,0.5);
+  padding: 25px;
+  margin: 0;
+  transform: translate(20px, -14px);
+  box-shadow: 3px 4px 4px -1px rgba(0,0,0,0.5);
+}
+
+#mobile-suggestions{
+  display: none;
+}
+
+/******* ASIDE ********/
+#how{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#how div{
+  width: 60vw;
+}
+
+#how aside{
+  width: 20vw;
+}
+#how aside p{
+  font-size: 1em;
+}
+#how p img{
+  max-width: 100%;
+}
+
+#word-display{
+  width: 100% !important;
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  padding: 8px;
+}
+aside button{
+  font-family: 'Roboto Mono', monospace;
+  border: 2px solid #000;
+  margin-top: 5px;
+  font-size: 1.25em;
+  cursor: pointer;
+  background-color: #0000ee;
+  color: #fff;
+}
+
+
+.fixed{
+  background-color: #fff;
+  position: fixed;
+  top: 60px;
+  right: 10%;
+  z-index: 1;
+}
+
+/**** RESPONSIVE ****/
+
+@media only screen and (max-width: 1250px) {
+  header{
+    height: 60vh;
+  }
+  header h1{
+    width: 75%;
+    font-size: 6em;
+    margin: 0 0 30px 0;
+    padding-top: 30px;
+  }
+
+  #word-display{
+    height: 250px;
+  }
+
+  figcaption{
+    display: none;
+  }
+}
+
+/** iPhone X **/
+@media only screen and (max-width: 375px) {
+  header{
+    height: 45vh;
+  }
+  header h1{
+    width: 90%;
+    font-size: 3em;
+    margin: 0 0 30px 0;
+    padding-top: 65px;
+  }
+  header h2{
+    font-size: 1em;
+  }
+
+  .sticky{
+    display: none;
+  }
+  #mobile-nav{
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    margin: 0;
+    width: 100vw;
+  }
+  #mobile-nav ul{
+    margin: 0;
+  }
+
+  .sec-title{
+    width: 100%;
+  }
+
+  #suggestions{
+    display: none;
+  }
+  #mobile-suggestions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #mobile-suggestions .sec-title{
+    width:100vw;
+  }
+  #mobile-suggestions article.zine{
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  figcaption{
+    background-color: #fff;
+    padding: 5px;
+    font-size: 2em;
+    color: #000;
+  }
+
+  #how div{
+    width: 100vw;
+  }
+  #how aside{
+    width: 100vw;
+    margin-top: 20px
+  }
+  #how aside p{
+    font-size: 1.3em;
+  }
+
+}

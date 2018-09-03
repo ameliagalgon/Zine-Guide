@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A guide to making your first zine">
+    <meta name="author" content="Amelia Galgon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A guide to making your first zine</title>
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- import Kosugi and Roboto Mono font -->
+    <link href="https://fonts.googleapis.com/css?family=Kosugi|Roboto+Mono:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="content">
+      <nav id="mobile-nav">
+        <ul>
+          <a href="#what"><li>What?</li></a>
+          <a href="#why"><li>Why?</li></a>
+          <a href="#how"><li>How?</li></a>
+          <a href="#mobile-suggestions"><li>More</li></a>
+        </ul>
+      </nav>
+      <header>
+        <h1 id="title"></h1>
+        <h2 id="subtitle"></h3>
+      </header>
+      <nav class="sticky">
+        <ul>
+          <a href="#what"><li>What is a zine?</li></a>
+          <a href="#why"><li>Why you should make a zine?</li></a>
+          <a href="#how"><li>How to make a zine?</li></a>
+          <a href="#suggestions"><li>Suggested reads</li></a>
+        </ul>
+      </nav>
+      <section id="what">
+        <h1 class="sec-title">What is a zine?</h1>
+        <p>Zines are tangible, self-published love in the form of little hand-made books. They are love letter from the author to a topic that they are passionate about, often writen with the intention to educate, for self expression or to exchange ideas and skills. They can be about anything!</p>
+        <p>Though folks have been self-publishing their ideas since they were physically able, the term "zine" originated in the 1950s as part of science-fiction fandom -- short for "fan magazine". These "fanzines" were collections of fan submitted art, articles and letters. In the 1970s, punk really embraced the form of the zine, writing about punk rock and hardcore music, DIY, anarchism, and other facets of punk culture. Out of punk grew Queercore (80's), a social movement criticizing society's disapprocal of LGBT rolds, and Riot Grrls (90's), a subculture / music genre critisizing sexism. Both used zine to express their ideas.</p>
+        <p>Zines can be read anonymously. Zines can be published anonymously. Most zines can be found for $1-$10, and many zine makers are willing or eager to trade. Zine making is not a profit driven venture. Some folks even give their zine away. </p>
+      </section>
+      <section id="why">
+        <h1 class="sec-title">Why should you write a zine?</h1>
+        <p>In the age of the internet, blogs are a form of self-publishing that anyone can do. But yet, folks still make zines!</p>
+        <p>Unlike blogs, zines cannot be censored. Zines do not vanish because a campany/weblog shut down. Zines do not attract trolls and terrible comment sections. Zines seem to have a deeper impact and influence, as their tactile nature makes them inviting to share with others in a meaningful way. It's not easy to "spam" zines, so folks are more likely to actually read them and conside what they have to say. Also, unlike blogs, you can send zines in the mail! Folks love receiving non-bill mail.</p>
+        <p>Due to their size relative to most books, zines are a more accessible way to begin to learn about a topic. A book is a sizable time commitment, but most zines can be read in an afternoon or less. There's a lot of red tape that goes into getting books published and distributed. A zine gives you unfettered access to the author's intentions. You know that they have not been censored beacuse their ideas were through too far for a main stream audience.</p>
+      </section>
+      <section id="how">
+        <div>
+          <h1 class="sec-title">How do you make a zine?</h1>
+          <p>Making your first zine is easy! All you need is a <strong>sheet of paper</strong>, <strong>scissors</strong>, <strong>something to write with</strong> and <strong>an idea</strong></p>
+          <p><strong>Step one:</strong> Fold your sheet of paper in half. Fold it again into quarters, and then one more time so that it is folded into eighths.<br> <img src="Step-1.jpg" alt="Step 1"> </p>
+          <p><strong>Step two:</strong> Open your paper so that it is folded in half. Cut halfway across the middle from the fold. When you open your paper it should have a slit in the middle.<br> <img src="Step-2.jpg" alt="Step 2"></p>
+          <p><strong>Step three:</strong> Fold your paper lengthwise (along the crease that has the slit). Hold the paper at either end, then push the ends in toward each other. The sections should fold into each other to form an eight-page booklet. <br> <img src="Step-3.jpg" alt="Step 3"></p>
+          <p><strong>Step four:</strong> Now it’s time for you to fill in your blank booklet and turn it into a zine! How you fill it in is completely up to you. You can plan or sketch out your content before making it final, or just wing it. Use the basic supplies only or add extra elements. If you want to just write and not use images, that’s cool too.</p>
+        </div>
+        <aside id="sidebar">
+          <p>It can sometimes be difficult to come up with something to write about. Use this little random word generator to spark some ideas in your brain</p>
+          <div id="word-display"></div>
+          <button onclick="generateWord()">Generate random word</button>
+        </aside>
+      </section>
+      <section id="suggestions">
+        <h1 class="sec-title">Suggested reads</h1>
+
+        <div class="multiple-items">
+          <article class="zine cometbus">
+            <figure >
+              <figcaption>Cometbus</figcaption>
+            </figure>
+          </article>
+          <article class="zine hard-soft">
+            <figure >
+              <figcaption>Hard/Soft</figcaption>
+            </figure>
+          </article>
+          <article class="zine loves-prayers">
+            <figure >
+              <figcaption>Love's Prayers Can't Save You</figcaption>
+            </figure>
+          </article>
+          <article class="zine about-zines">
+            <figure >
+              <figcaption>You Should Know About Zines</figcaption>
+            </figure>
+          </article>
+          <article class="zine peace-coast">
+            <figure >
+              <figcaption>Peace Coast</figcaption>
+            </figure>
+          </article>
+        </div>
+
+      </section>
+
+      <section id="mobile-suggestions">
+        <h1 class="sec-title">Suggested reads</h1>
+        <article class="zine cometbus">
+          <figure >
+            <figcaption>Cometbus</figcaption>
+          </figure>
+        </article>
+        <article class="zine hard-soft">
+          <figure >
+            <figcaption>Hard/Soft</figcaption>
+          </figure>
+        </article>
+        <article class="zine loves-prayers">
+          <figure >
+            <figcaption>Love's Prayers Can't Save You</figcaption>
+          </figure>
+        </article>
+        <article class="zine about-zines">
+          <figure >
+            <figcaption>You Should Know About Zines</figcaption>
+          </figure>
+        </article>
+        <article class="zine peace-coast">
+          <figure >
+            <figcaption>Peace Coast</figcaption>
+          </figure>
+        </article>
+      </section>
+    </div>
+    
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.js"></script>
+    <!-- slick -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
